@@ -1,0 +1,116 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to OASIS, ensuring you stay informed about new features and enhancements.
+---
+
+## Recent Updates
+
+Stay current with OASIS enhancements. Review the latest releases below to understand new capabilities in design strategy tools, development integrations, client portals, and performance fixes.
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added advanced design strategy tools with AI-powered wireframing and user journey mapping.
+- Introduced collaborative canvas for real-time team editing across platforms.
+
+## Improvements
+
+- Enhanced client portal with customizable dashboards and project timeline views.
+- Optimized rendering engine for `<50ms` load times on complex designs.
+
+## Bug Fixes
+
+- Resolved sync issues between Figma integrations and OASIS prototypes.
+- Fixed export errors for high-resolution PNG and SVG assets.
+
+<CodeGroup tabs="JavaScript,Python">
+````javascript
+// New API for wireframing
+const wireframe = await oasis.createWireframe({
+  strategy: 'user-journey',
+  elements: ['hero', 'cta']
+});
+````
+````python
+# New API for wireframing
+wireframe = await oasis.create_wireframe(
+    strategy='user-journey',
+    elements=['hero', 'cta']
+)
+````
+</CodeGroup>
+
+</Update>
+
+<Update label="2024-09-20" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated with Vercel and Netlify for seamless deployment previews.
+- Added client portal notifications for project milestones and feedback requests.
+
+## Improvements
+
+- Upgraded WebSocket connections for live collaboration with zero latency.
+
+## Bug Fixes
+
+- Patched authentication flows to prevent token refresh loops.
+- Corrected responsive preview glitches on mobile devices.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.1.0" tags={["improvement", "bugfix"]}>
+
+## Initial Enhancements
+
+- Improved performance with lazy loading for design assets.
+- Fixed canvas drag-and-drop inconsistencies across browsers.
+
+## Bug Fixes
+
+- Resolved file upload limits exceeding `100MB`.
+- Corrected color picker accuracy for brand color `#040404`.
+
+</Update>
+
+## Upcoming Roadmap
+
+Discover what's next for OASIS. These features prioritize your feedback for better design-to-development workflows.
+
+<Columns cols={3}>
+  <Card title="AI Prototyping" icon="zap" href="/quickstart">
+    Generate interactive prototypes from sketches in seconds.
+  </Card>
+  <Card title="Advanced Analytics" icon="bar-chart-3" href="/authentication">
+    Track user engagement metrics within the client portal.
+  </Card>
+  <Card title="Multi-Platform Export" icon="download" href="#">
+    One-click exports to React, Vue, and Flutter.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+Enable automatic updates in your OASIS dashboard settings to receive these features as they launch. Check release notes for migration steps.
+</Callout>
+
+## Upgrade Instructions
+
+Follow these steps to update OASIS and access the latest features.
+
+<Steps>
+  <Step title="Backup Projects" icon="database">
+    Export your active projects to avoid data loss.
+
+    ```
+    oasis export --projects all --format zip
+    ```
+  </Step>
+  <Step title="Run Update" icon="download">
+    Use the CLI to pull the latest version.
+  </Step>
+  <Step title="Verify" icon="check-circle">
+    Test key features like wireframing in a sandbox project.
+  </Step>
+</Steps>

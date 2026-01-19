@@ -1,0 +1,103 @@
+---
+title: Introduction to OASIS
+description: Discover OASIS, the comprehensive platform by Harvey Design for bridging business goals with user needs through strategy, design, and development services across all platforms.
+---
+
+## Overview
+
+OASIS, built by Harvey Design, empowers you to bridge business goals and user needs. Led by Harvey, a hybrid designer with over 5 years of experience, the platform delivers clean, delightful user experiences through strategy, UX design, and web development across all platforms. With 45+ completed projects and 12+ satisfied clients, OASIS solves real business problems in industries like fintech, delivery, and edtech.
+
+## Key Features
+
+OASIS provides end-to-end services tailored to your needs. Explore the core offerings below.
+
+<Columns cols={3}>
+  <Card title="Strategy" icon="target" href="#strategy">
+    Align your business objectives with user-centric roadmaps. Define clear goals and measure success from day one.
+  </Card>
+  <Card title="UX Design" icon="palette" href="#design">
+    Craft intuitive interfaces that delight users. From wireframes to prototypes, prioritize accessibility and engagement.
+  </Card>
+  <Card title="Web Development" icon="code" href="#development">
+    Build scalable, performant applications. Leverage modern stacks for responsive experiences across devices.
+  </Card>
+</Columns>
+
+## Industry Benefits
+
+Tailor OASIS to your sector for maximum impact.
+
+<Tabs>
+  <Tab title="Fintech" icon="dollar-sign">
+    Secure transactions and compliant interfaces ensure trust. Streamline onboarding with seamless UX flows, reducing churn by up to 30%.
+  </Tab>
+  <Tab title="Delivery" icon="truck" href="/quickstart">
+    Real-time tracking and intuitive apps boost efficiency. Optimize routes and user interactions for faster deliveries.
+  </Tab>
+  <Tab title="Edtech" icon="book-open">
+    Engaging learning platforms drive retention. Adaptive designs personalize education experiences for diverse learners.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Integrate OASIS branding seamlessly with the primary color `<#040404>`. Use it for headers and accents to maintain consistency.
+</Callout>
+
+```css
+:root {
+  --brand-primary: #040404;
+}
+
+.header {
+  background-color: var(--brand-primary);
+  color: white;
+}
+```
+
+## Quick Start
+
+Get up and running with OASIS in minutes.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Create your account at `https://dashboard.example.com` using your business email.
+  </Step>
+  <Step title="Define Goals" icon="target">
+    Outline your project requirements in the strategy dashboard.
+  </Step>
+  <Step title="Launch Project" icon="rocket">
+    Select services and kick off with Harvey Design's team.
+  </Step>
+</Steps>
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+// Initialize OASIS client
+import { OASIS } from '@oasis/sdk';
+
+const client = new OASIS({ apiKey: 'YOUR_API_KEY' });
+await client.strategy.create({ goals: ['scale users', 'improve UX'] });
+```
+```python
+# Initialize OASIS client
+from oasis import Client
+
+client = Client(api_key='YOUR_API_KEY')
+client.strategy.create(goals=['scale users', 'improve UX'])
+```
+</CodeGroup>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Explore Strategy" icon="map" href="/strategy">
+    Dive into roadmap planning.
+  </Card>
+  <Card title="View Portfolio" icon="image" href="/portfolio" target="_blank">
+    See 45+ projects in action.
+  </Card>
+</Columns>
+
+<Expandable title="Ready to transform your business?" default-open="true">
+  Contact the Harvey Design team today. OASIS delivers results across platforms, ensuring your fintech, delivery, or edtech venture thrives.
+</Expandable>
